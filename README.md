@@ -1,2 +1,3 @@
 # UNIMI-Codebase
-This repository will contain any line of code related to my university studies
+
+- [Architettura elaboratori laboratorio](https://github.com/lrivo/UNIMI-Codebase/tree/main/Architettura_elaboratori_lab): contiene i programmi scritti in linguaggio assembly LC2
