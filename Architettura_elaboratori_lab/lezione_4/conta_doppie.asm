@@ -23,12 +23,12 @@ conta_doppie
 	ST R2, svr2
 	ST R3, svr3
 	ST R4, svr4
+	NOT R1,R1
+	ADD R1,R1,#1
 	AND R3,R3,#0
 
-loop	NOT R4,R1
-	ADD R4,R4,#1
-	ADD R4,R4,R0	
-	BRZ done	; controllo se R0 punta a r1 (iterazione finita)		
+loop	ADD R4,R1,R0	
+	BRZP done	; controllo se R0 punta a r1 (iterazione finita)		
 	
 	LDR R2,R0,#0	; carattere precedente
 	ADD R0,R0,#1	; punto al prossimo carattere
